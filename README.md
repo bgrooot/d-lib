@@ -29,11 +29,11 @@ dzo.article 함수에 기사 ID를 파라미터로 넣어 Panel( 하나의 데�
 
 ```
 <div id="wrap">
-	<div data-dzo="title"></div>
+    <div data-dzo="title"></div>
 </div>
 <script>
-var article = dzo.article({id: '2017112401697'});
-dzo('article-panel').render(article);
+    var article = dzo.article({id: '2017112401697'});
+    dzo('article-panel').render(article);
 </script>
 ```
 
