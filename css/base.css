@@ -1,0 +1,406 @@
+﻿@charset "utf-8";
+/*기사면 샘플*/
+
+/* base */
+*{margin:0 auto;padding:0;}
+body{word-break:break-all;-ms-word-break:break-all; text-align:center;}
+body{background-color:#fff;font:normal 12px/17px "돋움",Dotum,"굴림",Gulim,AppleGothic,Sans-serif;color:#333;}
+h1,h2,h3,h4,h5,h6{font-size:12px;text-align:left;}
+img,fieldset,iframe{border:0 none;}
+li{list-style:none;}
+a{color:#333;text-decoration:none;cursor:pointer;_cursor /**/:hand;}
+a:hover{color:#333;text-decoration:underline;}
+table,tr,td{color:#333;margin:0px;padding:0px;}
+button,label{cursor:pointer;_cursor /**/:hand;}
+select{height:20px;padding-right:6px;}
+hr,legend,caption{font-size:0 !important;height:0 !important;line-height:0 !important;overflow:hidden;}
+
+.c { clear:both}
+.fl { float:left}
+.fr { float:right;}
+.mt5 { margin-top:5px;}
+.mr5{ margin-right:5px;}
+.mb5 {margin-bottom:5px;}
+.ml5 {margin-left:5px;}
+
+#wrap {clear:both;width:970px;margin:0 auto;padding-bottom:20px;text-align:left;z-index:1;}
+#header, #footer{width:970px;margin:0 auto;text-align:left;}
+#content{float: left; width:670px; font:normal 14px/23px  "굴림",Gulim, "돋움",Dotum, AppleGothic,Sans-serif;}
+#aside_2011{float:right;width:300px;text-align:left;margin-top:20px;font-family:"돋움",Dotum, AppleGothic,Sans-serif;}
+#news_brief {clear:both; width:970px; margin:0 auto;}
+
+#title_area { width:960px; padding:20px 0 14px 10px;background-color:#f8f8f8; border-bottom:1px solid #d7d7d7; }
+#title_sub { margin:10px 0 20px 10px;}
+#keyword {width:640px;margin-top:30px;}
+#related_list { display: none; margin:25px 0; font:bold 14px/18px  "돋움",Dotum,"굴림",Gulim,AppleGothic,Sans-serif;}
+
+.date {font-size:11px;color:#9a9a9a;margin-bottom:8px;}
+.subtitle{font: bold 14px/22px  "돋움",Dotum,"굴림",Gulim,AppleGothic,Sans-serif;color:#5d5d5d;}
+
+/*타이틀영역*/
+#title {clear:both;padding:20px 0 0 0;position:relative; background:#fafafa; border-bottom:1px solid #d7d7d7;z-index:50;min-height:50px;}
+*:first-child+html #title { min-height:50px;}/*ie7핵*/
+#title:after{display:block; clear:both; content:"";}
+#title dl {}
+#title p { margin-bottom:7px;}
+.category { float:left; width:100px;margin:0 5px 10px 15px;display:inline;}
+.category dt{display:block;}
+.category dt span { font-size:9px; vertical-align:middle;margin-left:6px;}
+.category img{vertical-align:middle; margin:0px 0 5px 6px;}
+.category dd { width:100px; padding-top: 7px; display:block;}
+.category a, .category a:link, .category a:visited, .category a:hover {text-decoration:none; cursor:pointer;}
+
+.category .cat_id:hover .cat_list.hover {display: inline}
+.cat_list {display: none; position:absolute; top:47px; left:23px; width:100px;background:#fff; border:1px solid #333;padding:8px 5px 8px 7px; z-index:50; letter-spacing:-1px; word-spacing:0px}
+.cat_list .selected_cat {font-weight: bold; color: #C51919;}
+.cat_list li {font:12px/19px 굴림 normal; cursor:pointer; color:#333;}
+.cat_list li:hover, .cat_list li:focus {background:#f5f5f5;text-decoration:underline;}
+
+.title_author { float:left;  width:590px;padding-left: 19px; margin-bottom:10px;border-left:1px solid #e5e5e5;position:relative;}
+.headline {margin-bottom:5px;  font:bold 24px/29px "돋움",Dotum,AppleGothic,Sans-serif;color:#000;letter-spacing:-2px; }
+
+/*.title_author dd{position:relative; display:inline;margin:0 10px 0px 1px;}*/
+.title_author dd { position:relative;margin:0 10px 0px 1px;}
+.title_author dd a {color:#8d8d8d;cursor:pointer;_cursor /**/:hand;}
+.title_author dd img{vertical-align: middle; margin:-2px 0 0 0;}
+.j_popup{background:#fff; border:1px solid #636363; display:none; width:155px; position:absolute; left:0px; top:18px; word-break:break-all;z-index:300;}
+.j_more {width:128px; margin:10px auto 8px; text-align:center;}
+
+.author_arrow {font-size: 10px; font-weight: bold;}
+.author_hover {display: none;}
+.author:hover .author_hover {display: inline;}
+.author:hover .author_stand {display: none;}
+
+.title_author dd { float:left; padding-right:10px; font:12px/20px "돋움",Dotum;color:#8d8d8d;letter-spacing:-1px;}
+.cat_id{font:bold 24px "돋움",Dotum;color:#333;letter-spacing:-2px; word-spacing:-7px; }
+.sub_cat{ font:bold 12px/18px "돋움",Dotum; color:#666; letter-spacing:-1px;}
+.sub_catid { font:bold 12px/16px "돋움",Dotum; color:#666; letter-spacing:-2px;}
+
+/*기사면 상단 버튼 관련 */
+.tab_ctrl_2011{clear:both;float:none;position:relative;width:970px;height:27px;background-color:#fafafa;}
+
+.art_tab_2011{overflow:hidden; padding-left:13px;}
+.art_tab_2011 li{float:left;text-align:center;padding:6px 0 2px; height:18px; background-color:#fafafa;border:1px solid #CCC;border-left:none;font-size:13px;color:#333;display:inline;}
+.art_tab_2011 li:first-child {border-left:1px solid #CCC;}
+.art_tab_2011 li a{font-size:13px;color:#666;}
+.art_tab_2011 li span{color:#bb3333;font-size:12px;padding-left:6px;}
+.art_tab_2011 li span#BBSCNT{padding:0 !important;}
+
+.art_tab_2011 #art_tab1, .art_tab_2011 #art_tab2, .art_tab_2011 #art_tab3, .art_tab_2011 #art_tab4{width:108px;}
+.art_tab_2011 #art_tab5 a {color:#bb3333 !important; font-weight:bold;}
+.art_tab_2011 li.on {border-bottom:1px solid #fff; background-color:#fff;font-weight:bold;}
+
+.art_language { padding:7px 0 0 13px !important;border:none !important;}
+.art_language span {float:left;padding:0 8px;font:bold 12px "돋움",Dotum,AppleGothic,serif;color:#8c8c8c;display:inline; border-left:1px solid #d7d7d7;}
+.art_language span:first-child {border-left:none;}
+
+/* 상단 페이스북,트위터 버튼 */
+.tab_ctrl_2011 .ctrl3 {position:absolute; top:3px; right:11px;}
+.tab_ctrl_2011 .ctrl3 li {margin:5px 0 0 0; float:left;font: 12px "돋움",Dotum;color:#999;display:inline;height:11px;word-spacing:-1px;}
+.tab_ctrl_2011 .ctrl3 li a{color:#999}
+.tab_ctrl_2011 .ctrl3 li.btn_fb {margin:0px 20px 0 0;}
+.tab_ctrl_2011 .ctrl3 li.btn_fb img {vertical-align:middle; }
+.tab_ctrl_2011 .ctrl3 li.btn_outlist {cursor:pointer;_cursor /**/:hand; margin:3px 7px 0 0;}
+
+/*기사 내보내기 팝업 레이어*/
+#out_popup_top{ display:none; width:108px; position:absolute; border:1px solid #000; background:#fff;bottom:-87px; right:15px;z-index:20;}
+#out_popup_bot{ display:none; width:108px; height:93px; position:absolute; background:#fff; border:1px solid #000; top:15px; right:0px; z-index:20;}
+#o_top{width:100px; margin:10px 0 10px 12px;}
+#o_btm{width:100px; margin:10px 0 0 12px;}
+#o_btm li{margin-bottom:2px;}
+#o_btm img{margin:1px 5px 0  0;}
+
+/*100자평*/
+.comment_100_2011{width: 650px;overflow: hidden;font:normal 12px/17px "돋움",Dotum;}
+/* 100자평 */
+.float_L {float:left;}
+.float_R {float:right;}
+.comment_100 {margin-top:0; font-size:12px;}
+.comment_100 a:link, .comment_100 a:hover, .comment_100 a:visited {color:#333;}
+.comment_100 img {margin:0; padding:0; vertical-align:top;}
+.comment_100 h3 p.com_count {float:right; margin:16px 5px 0 0; padding-top:0;}
+.mar_top3 img {vertical-align:middle;}
+.comment_100 h3 {height:25px; padding:0 0 9px 2px; font-weight:normal; border-bottom:2px solid #c72121; font-size:12px;}
+.comment_100 h3 p {height:22px; padding-top:6px; line-height:22px;}
+.comment_100 h3.all_100 {height:39px; padding-bottom:0; margin-top:25px;}
+.comment_100 h3.all_100 img {margin:5px 0 0 1px;}
+.comment_100 .bot_h3 {margin-bottom:10px; border:0 none; font-size:12px;}
+a:link.col_red, a:hover.col_red, a:visited.col_red {font-weight:bold; color:#c41a1d;}
+.normal_box {clear:both; overflow:hidden; height:100%; padding-bottom:17px;}
+.best_box {position:relative; height:100%; padding:10px 19px 9px 19px; border:1px solid #ded3b5; border-top:none; background:#fefbf6;}
+.best_pad {padding-bottom:7px; overflow:hidden;}
+.start {margin-top:10px;}
+.end {padding-bottom:10px;}
+
+/* 내 100자평 */
+.who_100 {padding:1px 0 0 10px; font:bold 13px 굴림; background:url("http://image.chosun.com/cs/comment2011/bg_who.jpg") 1px 3px no-repeat;}
+.who_100 span {font:normal 11px 굴림;}
+.normal_box h4 {height:auto; margin:7px 0 3px 0; padding-right: 90px;}
+.normal_box h4 a:link, .normal_box h4 a:hover, .normal_box h4 a:visited {color:#014a81;}
+.btn_comall {position:absolute; top:6px; right:5px;}
+
+/* 베스트 댓글 상단 - 썸네일 */
+.best_box .user_control {position:relative; height:33px; margin-bottom:6px; border-bottom:1px solid #dcd5cb;}
+.best_box .best_user_thum {position:absolute; left:0; top:0; line-height:12px;}
+.best_box .best_user_thum dt {border:1px solid #d0d0d0;}
+
+/* 일반 댓글 상단 - 썸네일 */
+.normal_box .user_control {height:26px; margin-bottom:9px; overflow:hidden;}
+.normal_box .user_control:after {clear:both; display:block; content:"";}
+.normal_box .best_user_thum {float:left; margin-right:10px; line-height:12px; border:1px solid #d0d0d0;}
+
+/* 댓글 상단 박스 설정 */
+.best_box .user_setbox {float:left; padding:9px 0 0 38px;}
+.normal_box .user_setbox {float:left; padding:9px 0 0 0;}
+
+.best_box .set_add, .normal_box .set_add {_position:relative; padding:9px 0 7px 15px; background:url("http://image.chosun.com/cs/comment2011/bg_add.jpg") left 6px no-repeat;}
+
+/* 베스트,일반 공통 설정 - 이름,아이디,시간 등.. */
+.user_setbox li {float:left;}
+.user_setbox li.user_id {margin-right:6px;}
+.user_setbox a:link.u_name, .user_setbox a:hover.u_name, .user_setbox a:visited.u_name {margin-right:5px; font:bold 13px 굴림; color:#010000;}
+a:link.u_id, a:hover.u_id, a:visited.u_id {font:11px 돋움; color:#666;}
+.user_setbox li.user_ni {margin-right:6px;}
+.user_setbox li.user_sns {line-height:12px;}
+.user_data {float:right; padding:9px 0 10px 0; color:#9a9997;}
+.user_data span {margin-right:8px;}
+.data_add {_position:relative;  padding-bottom:7px;}
+
+/* 따옴표 시작 */
+.comment_txt {padding:6px 25px 6px 39px; line-height:19px; color:#666; letter-spacing:-0.3px;}
+.best_box .comment_txt {background:url("http://image.chosun.com/cs/comment2011/bg_txt_top.jpg") left 8px no-repeat;}
+.normal_box .comment_txt {padding:6px 0;}
+
+/* 일반 댓글 라인 */
+.normal_line {position:relative; padding:7px 19px 9px 19px; border:1px solid #e5e5e5;}
+.bg_box_arrow {position:absolute; width:11px; height:6px; left:8px; top:-6px; _left:-10px; _top:-5px; background:url("http://image.chosun.com/cs/comment2011/bg_box_arrow.jpg") left top no-repeat;}
+
+/* 댓글 속 라인 */
+.user_line, .user_line_add {height:1px; overflow:hidden;}
+.best_box .user_line {margin:3px 26px 0 39px; border-top:1px solid #ede1c9;}
+.normal_box .user_line {margin:1px 0 0 0; border-top:1px solid #ededed;}
+.user_line_add {margin:9px 0 5px 0; border-top:1px solid #e5e5e5;}
+
+/* 따옴표 끝 */
+.user_etc {margin:0 0 0 39px; padding:8px 0 0 1px;}
+.best_box .user_etc {background:url("http://image.chosun.com/cs/comment2011/bg_txt_bot.jpg") right bottom no-repeat;}
+.normal_box .user_etc {margin:0; padding-left:0;}
+
+/* 기타 공통 */
+.user_etc a:link.col_red, .user_etc a:hover.col_red, .user_etc a:visited.col_red {font-weight:bold; color:#c61a1a; text-decoration:underline;}
+.user_etc span {margin-right:9px;}
+.user_etc img {margin-bottom:2px; vertical-align:middle;}
+.user_etc .col_ccc {margin-right:0; color:#ccc;}
+.bg_txt_bot {width:27px; height:22px; margin-right:-29px;  display:block;}
+
+.com_add_box {margin:12px 0 7px 0; padding:3px 8px 9px 9px; border:1px solid #f0f0f0; background:#f8f8f8;}
+.com_add_txt {clear:both; padding-left:15px; line-height:19px; color:#666;}
+.com_table {width:100%; height:26px; border-collapse:collapse;}
+.com_table td {padding-top:11px;}
+.com_table td.input_td {padding-right:28px; _padding-top:12px;}
+.com_table img {vertical-align:middle; cursor:pointer;}
+.com_table input {margin:0 !important;}
+.com_write {width:100%; height:15px; padding:4px 14px; color:#999; border:1px solid #e5e5e5;}
+.btn_x {position:absolute; right:19px; bottom:16px; _right:20px; _bottom:69px;}
+.best_pad .btn_x {bottom:16px;}
+
+/* 댓글 순 탭 */
+.order_box {position:relative; float:right; height:30px; top:9px; border-bottom:2px solid #c62221; _border-bottom:none;}
+.order_box li {float:left; font-weight:bold; border-top:1px solid #c6c6c6; background-color:#f2f2f2;}
+.order_box .tab1 {border-left:1px solid #c6c6c6;} 
+.order_box .tab_onL {border-right:1px solid #c6c6c6;}
+.order_box .tab_onR {border-left:1px solid #c6c6c6;}
+.order_box .tab3 {border-right:1px solid #c6c6c6;}
+.order_box li.tab_on {position:relative; padding-bottom:2px; right:0px; top:0; border:2px solid #c62221; border-bottom:none; background-color:#fff;}
+.order_box a:link, .order_box a:hover, .order_box a:visited {width:50px; height:16px; padding:7px 13px 6px 13px; _padding-bottom:5px; text-align:center; text-decoration:none; display:block;}
+.order_box li.tab_on a:link, .order_box li.tab_on a:hover, .order_box li.tab_on a:visited {padding:6px 12px 6px 12px; _padding-bottom:5px;}
+
+/* Paginate */
+.paginate {clear:both; margin:0px; text-align:center; padding:0 0 0 0; border:none;}
+.paginate a,
+.paginate strong { position:relative; display:inline-block; margin-right:1px; padding:3px 3px 1px 3px; color:#333333; text-decoration:none; border:1px solid #bfbfbf; font:12px/normal Dotum; _width /**/:10px; min-width:7px; background-color:#ffffff; line-height:10px;}
+.paginate strong { color:#c8292a !important; font-weight:bold; border:none; margin-right:1px; padding:3px 3px 1px 3px; border:1px solid #bfbfbf; line-height:10px;}
+*:first-child+html .paginate .pre,
+*:first-child+html .paginate .next {top:0px;}
+.paginate a:hover {color:#c8292a !important; border:1px solid #aeaeae; text-decoration:none;}
+.paginate span img {vertical-align:middle; margin:0 0 2px 0;}
+.paginate span a {border:none; background:none; font-size:12px; color:#333333; font-weight:normal;}
+.paginate span a:hover {border:none; background:none !important; font-size:12px; color:#333333; font-weight:normal; }
+
+/* Paginate */
+.paginate_100 {clear:both; margin:0px; text-align:center; padding:0 0 0 0; border:none;}
+.paginate_100 a,
+.paginate_100 strong { position:relative; display:inline-block; margin-right:1px; padding:3px 3px 1px 3px; color:#333333; text-decoration:none; border:1px solid #bfbfbf; font:12px/normal Dotum; _width /**/:10px; min-width:7px; background-color:#ffffff; line-height:10px;}
+.paginate_100 strong { color:#c8292a !important; font-weight:bold; border:none; margin-right:1px; padding:3px 3px 1px 3px; border:1px solid #bfbfbf; line-height:10px;}
+*:first-child+html .paginate_100 .pre,
+*:first-child+html .paginate_100 .next {top:0px;}
+.paginate_100 a:hover {color:#c8292a !important; border:1px solid #aeaeae; text-decoration:none;}
+.paginate_100 span img {vertical-align:middle; margin:0 0 2px 0;}
+.paginate_100 span a {border:none; background:none; font-size:12px; color:#333333; font-weight:normal;}
+.paginate_100 span a:hover {border:none; background:none !important; font-size:12px; color:#333333; font-weight:normal; }
+
+/* 추가 2011.02.22 */
+.comment_100 h3 p.com_count_v2 {float:right; margin:16px 5px 0 0; padding:0 8px 0 0; background:url(http://image.chosun.com/cs/comment2011/icon_100_arrow.jpg) no-repeat right 6px;}
+.comment_100 .bot_h3_v2 {margin-bottom:10px; padding:0 0 0 2px; border:0 none; font-weight:normal; font-size:12px;}
+.comment_100 .bot_h3_v2 p {padding:0 8px 0 0; background: url('http://image.chosun.com/cs/comment2011/icon_100_arrow.jpg') no-repeat right 7px; background-position:right 6px;}
+.best_pad .user_data {float:right; padding:9px 0 0 0; color:#9a9997;}
+
+.best_box {position:relative; height:100%; padding:10px 19px 9px 19px; border:1px solid #ded3b5; background:#fefbf6;}
+.best_pad .user_control {position:relative; height:33px; margin:11px 0 0 0; z-index:20;}
+.best_pad .best_user_thum {position:absolute; left:0; top:0; line-height:12px;}
+.best_pad .best_user_thum dt {border:1px solid #d0d0d0;}
+.best_pad .user_control .user_setbox {float:left; padding:9px 0 0 38px;}
+
+/* 201209 100자평 개선 */
+ul,ol,li {list-style:none;}
+a:link.login, a:hover.login, a:visited.login, a:link.member, a:hover.member, a:visited.member {color:#333;}
+.ifr_com_box {padding:14px 19px 6px 17px; border:1px solid #e2e2e2; background:#f7f7f7;}
+.ifr_login_box {height:22px; margin-bottom:5px;}
+.ifr_idpw {float:left; margin-right:10px;}
+.ifr_my100 {float:left; margin:1px 15px 0 0;}
+.ifr_login {float:left; padding-top:4px;}
+.ifr_etc {float:right; padding-top:4px;}
+.ifr_line {color:#acacac;}
+.user_on {margin-right:10px; padding:4px 0 0 2px; font-weight:bold;}
+.u_id {width:93px; margin-left:2px; padding:3px 4px 3px 7px; color:#888;}
+.u_pw {width:82px; padding:3px 4px 3px 7px; color:#888; }
+.ifr_com_table {width:100%; margin-bottom:6px;}
+.ifr_com_table input, .ifr_login_box input {border:1px solid #e1e1e1; font:12px/17px 굴림;}
+.ifr_text_td {padding-right:18px;}
+.ifr_100 {width:100%; height:51px; padding:7px 9px; font:12px/17px 굴림; color:#989898; text-align:left; vertical-align:middle; border:1px solid #e1e1e1;}
+.ifr_send_box {height:15px;}
+.ifr_send_box input {float:left; margin:1px 7px 0 0; margin:-3px 4px 0 0;}
+.ifr_send_box img {float:left; margin-right:16px; margin-right:12px; vertical-align:middle;}
+.ifr_send {float:left; margin-right:4px; font-weight:bold;}
+.ifr_send_box .ifr_arrow {margin:4px 20px 0 0; margin:4px 16px 0 0;}
+
+/* 추가 2012.08.16 */
+.user_control { position:relative; overflow:visible!important; z-index:5;}
+.user_etc { position:relative; }
+.pro_sns_pop { position:absolute; width:209px; height:64px; z-index:4; top:22px; left:0px; overflow:hidden; background: url(http://image.chosun.com/cs/comment2011/100_pro_sns_bg.png) no-repeat; padding-top:16px; font: 11px "돋움", Dotum, AppleGothic, sans-serif; letter-spacing:-1px; padding-left: 11px; display:none; }
+.pro_sns_pop ul { overflow: hidden; margin: 5px 0;}
+.pro_sns_pop li { float:left; margin-right:5px;}
+.pro_sns_pop a.ico { display:block; width:25px; ; height:25px; background: url(http://image.chosun.com/cs/comment2011/100_pro_sns_ico.png) no-repeat 0px 0px; }
+.pro_sns_pop a.pop_fb { background-position: 0px 0px;}
+.pro_sns_pop a.pop_tw { background-position: -30px 0px;}
+.pro_sns_pop a.pop_me { background-position: -60px 0px;}
+.pro_sns_pop a.pop_yz { background-position: -90px 0px;}
+.pro_sns_pop a.pop_cb { background-position: -120px 0px;}
+.pro_sns_pop a.pop_hp { background-position: -150px 0px;}
+.pro_sns_pop a.pop_fb.link { background-position: 0px -35px;}
+.pro_sns_pop a.pop_tw.link { background-position: -30px -35px;}
+.pro_sns_pop a.pop_me.link { background-position: -61px -35px;}
+.pro_sns_pop a.pop_yz.link { background-position: -92px -35px;}
+.pro_sns_pop a.pop_cb.link { background-position: -122px -35px;}
+.sns_rel { display:block; position:absolute; top:8px; right:0px; margin:0!important;}
+a.comment_save { width:98px; height:67px; display:block; background: url(http://image.chosun.com/cs/comment2011/btn_100_ok.png) no-repeat 0px 0px; }
+a.comment_save:hover { background-position:0px -77px;}
+a.comment_save span { display:none;}
+.comment_font_sz { position:absolute; width:90px; top: 19px; left:111px;}
+.comment_font_sz a:hover { text-decoration: underline;}
+h3.all_100 { position:relative;}
+
+
+/*기사면 단락*/
+.paragraph {width:640px;margin-left:10px;}
+.paragraph:after{display:block; clear:both; content:"";}
+.paragraph p{margin-bottom:24px;font-family:"굴림",Gulim,"돋움",Dotum,AppleGothic,Sans-serif;line-height:23px;}
+.paragraph dl dt span {font-size:6px; vertical-align:middle; margin-right:3px;}
+
+a.linkbg { color:#333; background: #eee; text-decoration:none; padding: 2px 1px;}
+
+.left_img { float:left; padding:0 20px 5px 0;display:inline; position:relative; resize:both; max-width:260px; height:auto;}
+.right_img {float:right;padding:0 0 5px 20px;display:inline; position:relative; resize:both; max-width:260px; height:auto;}
+.center_img {clear:both; text-align:center; padding:5px 0 0 0;margin:0 auto 20px; position:relative; resize:both; max-width:560px; height:auto;}
+.thumb {width:100%;display:block; vertical-align:top; border:1px solid #d5d5d5;margin-bottom:5px;}
+.desc {font:normal 11px/16px "돋움",Dotum,AppleGothic,Sans-serif;color:#a9a9a9;text-align:left; padding-bottom:5px;}
+.search{ font: bold 14px/18px  "돋움",Dotum,"굴림",Gulim,AppleGothic,Sans-serif; color:#294a9e;}
+
+#foreign {width:640px; padding-top:15px; text-align:right; font-size:10px;color:#999;}
+#foreign span {font-weight:bold; color:#c71a16;}
+#foreign li {display:inline; margin-right:15px;}
+
+#related_list dl {display:block; background:url('http://image.chosun.com/cs/article/2011/article_bullet.gif') no-repeat 0 25%; padding:0 0 8px 15px;} 
+#related_list dl dt { overflow:hidden;}
+#related_list span {margin-left:10px; font-size:12px; font-weight:normal; color:#999;}
+#related_list dl img{float:left; width:58px; height:43px; border:1px solid #ebebeb; margin: 0 12px 10px 0; vertical-align:middle;}
+
+.search span {font-size:10px; vertical-align:top;}
+.search a:link, .search a:visited, .search a:hover {color:#294a9e;}
+.paragraph a,.paragraph a:link,.paragraph a:visited, .paragraph a:hover {color:#3560A7;text-decoration:underline;line-height:23px;}
+/*a.focus, a.focus:link, a.focus :visited, a.focus:hover{color:#3560A7;text-decoration:underline;line-height:23px;}*/
+.language a, .language a:link, .language a:visited,.language a:hover {font-size:12px; color:#999; text-decoration:none;}
+
+
+/*기사내 동영상 팝업 관련*/
+a.btn_movie { width:90px; height:90px; display:block; position:absolute; top:50%; left:50%; margin-top:-45px; margin-left:-45px; background: url(http://image.chosun.com/cs/article/2012/type_mov_onoff.png) no-repeat 0px 0px;}
+/*a.btn_movie:hover { background-position: 0px -98px;}
+a.btn_movie img {display:none;}*/
+#pop_video {position:relative;width:638px; margin-bottom:15px; border:1px solid #ccc; background:#f5f5f5;display:none;}
+#pop_video h4 {width:610px;margin:4px 4px 0; padding:10px 10px 5px;background:#fff; font:bold 18px/24px '돋움',dotum; letter-spacing:-1px;}
+#pop_video dl { position:relative; width:600px;margin:0px 4px 4px; padding:0 15px 15px;background:#fff;}
+#pop_video dt.desc {padding:0 5px;margin-top:-5px;color:#333;}
+#pop_video dd {margin-bottom:5px;}
+#close {position: absolute;bottom:-25px;right:0;z-index:1;}
+/*#pop_video p {position: absolute;bottom:-30px;right:0;z-index:1;}
+.par_media_close img {position: absolute;bottom:0px;right:0px;z-index:10;}*/
+
+/*동영상팝업정보*/
+#pop_videotag{}
+#pop_videotag object {width:600px !important; height:399px !important;}
+#pop_videotag embed{width:600px !important; height:399px !important;}
+#pop_videotag video{width:600px !important; height:399px !important;}
+
+
+/*기사내 프로모션배너*/
+/*.promotion{float:right;width: 261px; height: 242px; margin:0 0 20px 20px;display:inline;}*/
+.promotion{float:right; margin:0 20px 20px 20px;display:inline;}
+
+/*copyright 기사면 하단*/
+.copy_2013 {clear:both; width:650px; overflow:hidden; margin:10px 0 0 0; color:#666; font:normal 12px/17px "돋움",Dotum,AppleGothic,Sans-serif;}
+.copy_2013 a:link, .copy_2013 a:visited, .copy_2013 a:hover, .copy_2013 a:focus {color:#666;}
+
+			
+.bot_ctrl_v4 {clear:both;width:650px;height:24px;border-top:1px solid #ccc; background:#fafafa;margin-bottom:30px;padding-top:3px; font:normal 12px/17px "굴림",Gulim,AppleGothic,Sans-serif;}
+.bot_ctrl_v4 a:link, .bot_ctrl_v4 a:visited, .bot_ctrl_v4 a:hover {color:#999;}
+.bot_ctrl_v4 li.bot_ctrlL{float: left; padding: 3px 0 0 10px; position: relative;}
+.btn_fb{margin-right: 10px; padding-top: 2px; float:left;}
+.btn_fb img{margin-top: -3px; padding-top:0; vertical-align: middle;}
+.bot_ctrl_v4 .bot_ctrlR {float:right; margin: 0 10px 0 0}
+.bot_ctrl_v4 .bot_ctrlR ul li.bot_list {float:left;margin-left:15px;padding:3px 9px 0 5px;background:url("http://image.chosun.com/cs/comment2011/bg_ctrl_line.gif") right 5px no-repeat;}
+.bot_ctrl_v4 .bot_ctrlR ul li.go_top {float:left;padding:3px 5px 0 5px; _padding-top:5px; background:none; cursor:pointer;}
+.bot_ctrl_v4 .bot_ctrlR ul li img{margin:0 2px 0 0; vertical-align:text-top;}
+
+
+/*현재 기사면 참조*/
+.right_related {width:300px;text-align:left;}
+.right_related img {margin:0 0 15px 0;}
+.right_related dl{margin:0 0 16px 0;}
+.right_related dl img{float:left; width:99px; height:74px; overflow:hidden; border:1px solid #ebebeb; margin:0 10px 0 0;}
+.right_related dt{color:#333; font-weight:bold; margin: 0 0 3px 0}
+.right_related dd{color:#666; font-size:12px;line-height:17px;font-family:"돋움",Dotum,AppleGothic,Sans-serif;word-spacing:-1px;}
+.right_related ul{color:#333; font-family:"돋움",Dotum,AppleGothic,Sans-serif; margin:0 0 20px 0;}
+.right_related ul li span{font-weight:bold; font-size:12px;line-height:17px;word-spacing:-1px;}
+
+/*사설칼럼 메뉴*/
+#list_box {float:left; text-align:left; width:298px; height:620px; border:1px solid #dadada; background-color:#fff; margin-bottom:30px; display:block;}
+#lb_warp {width:296px; height:618px; margin:1px; background-color:#f6f6f6;}
+#lb_tit {padding:13px 0 0 18px;}
+#lb_list {width:288px; height:567px; margin:10px 0 0 4px; background-color:#fff; overflow:hidden;}
+#lb_list dl{width:260px; margin:12px 0 0 15px; padding-bottom:6px; border-bottom:1px solid #ebebeb; overflow:hidden;}
+#lb_list dl:after{display:block; clear:both; content:""; overflow:visible;}
+#lb_list dd {height:20px; display:block; float:left;}
+.lbl_1{width:92px;}
+.lbl_2{width:130px}
+.lbl_3{width:91px;}
+#lb_list a{color:#323232;}
+#lb_list a:hover {text-decoration:none;}
+#lb_list a:visited {color:#999;}
+
+/*기사면 광고 */
+.title_ad{float:right; margin:-5px 15px 10px 0;}
+ #advertizing {width:650px;margin:0 20px 25px 0;}
+ #sponsor_ad{width:490px; margin:0 0 30px 0; float: left;}
+ #side_banner {float: right;}
+ #Google{margin-top:20px;;width:490px;}
+ #CENTER_340_ad{width:650px;background:none; border:0px; padding: 10px 0 6px;text-align: center;clear: both;}
