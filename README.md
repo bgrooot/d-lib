@@ -77,3 +77,56 @@ Panel과 Model, Action 이 3가지 스크립트가 하나의 Panel로 이루어�
 - - -
 
 ### UI 컴포넌트
+기사 템플릿과 동일하게 데이타 어트리뷰트 기반. 컴포넌트 옵션 값들을 어트리뷰트로 넣어줄 수 있다.  
+
+컴포넌트의 종류(**data-comp**)와 CMS의 어떤 XML(**data-bind**)의 필드(**data-code**)와 결합될 것인가를 설정한다. 
+필드(**data-bind**)는 배열로 지정하여 복수개의 필드와 결합 될 수 있다. 
+그리고 **document**의 **uiLoadComplete**이벤트의 데이터에 랜더링될 엘리먼트를 jQuery로 wrapping하여 념겨주면 된다.
+
+```
+...
+<div data-bind="tag_www" data-code="headline_art2" data-comp="ranking"></div>
+<script>
+$(document).trigger({type: 'uiLoadComplete', elem: $('body')});
+</script>
+...
+```
+
+##### 랭킹
+**[DEMO PAGE](https://goo.gl/Mc7B9Y)**
+
+|어트리뷰트|설명|
+|-|-|
+|data-list-type|number, dot, text|
+|data-count|아이템 개수|
+|data-mark-count|강조 표시할 아이템 개수|
+|data-to|아이템 시작 인덱스|
+|data-from|아이템 종료 인덱스|
+  
+  
+##### 이벤트 배너
+**[DEMO PAGE](https://goo.gl/HGTz42)**
+
+|어트리뷰트|설명|
+|-|-|
+|data-page-type|number, button, animation|
+|data-random|true, false|
+|data-duration|아이템 전환 시간 *(animation 타입에서만 적용)*|
+
+##### 갤러리
+**[DEMO PAGE](https://goo.gl/psTcYE)**
+
+|어트리뷰트|설명|
+|-|-|
+|data-count|아이템 개수|
+|data-random|true, false|
+
+##### 탭
+**[DEMO PAGE](https://goo.gl/EWkXKx)**
+
+|어트리뷰트|설명|
+|-|-|
+|data-event|mouseover, click|
+|data-nav-position|top, bottom|
+|data-full-width|true, false|
+|data-nav-text|탭 텍스트|
