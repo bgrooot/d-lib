@@ -22,7 +22,7 @@ dzo객체의 프로토타입에 기술한 것은 인스턴스에 포함되게 �
 - - - -
 
 ### 기사 템플릿
-**[DEMO PAGE](http://goo.gl/u4yFLB)** (*&ast; CORS문제로 자체 서버를 경유하여 XML이 로딩되어 속도가 느림.*)
+**[DEMO PAGE](http://jsfiddle.net/xep036ac/4)** (*&ast; CORS문제로 자체 서버를 경유하여 XML이 로딩되어 속도가 느림.*)
 
 순수 HTML을 사용하여 기사 페이지를 만들수 있는 데이트 어트리뷰트(data-*) 기반의 템플릿 라이브러리.  
 dzo.article 함수에 기사 ID를 파라미터로 넣어 Panel( 하나의 데이터와 결합될 템플릿 영역)을 생성하고, render함수에 생성된 Panel을 파라미터로 넣어 템플릿을 랜더링한다.
@@ -93,7 +93,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 ```
 
 ##### 랭킹
-**[DEMO PAGE](https://goo.gl/Mc7B9Y)**
+**[DEMO PAGE](http://jsfiddle.net/67erst4d/3)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -105,7 +105,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
   
   
 ##### 이벤트 배너
-**[DEMO PAGE](https://goo.gl/HGTz42)**
+**[DEMO PAGE](http://jsfiddle.net/z4zbqwkp/3)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -114,7 +114,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |data-duration|아이템 전환 시간 *(animation 타입에서만 적용)*|
 
 ##### 갤러리
-**[DEMO PAGE](https://goo.gl/psTcYE)**
+**[DEMO PAGE](http://jsfiddle.net/L7nrnhwm/2)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -122,7 +122,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |data-random|true, false|
 
 ##### 탭
-**[DEMO PAGE](https://goo.gl/EWkXKx)**
+**[DEMO PAGE](http://jsfiddle.net/7qusgzqb/3)**
 
 |어트리뷰트|설명|
 |-|-|
