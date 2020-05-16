@@ -32,13 +32,13 @@ var dzo;
     };
 
     //jsonp function
-    window.dzo_json = function(bind, json) {   
+    window.dzo_json = function(bind, json) {
 
         var event = jQuery.Event(bind + 'LoadComplate');
 
-        event.json = json;       
+        event.json = json;
         $(document).trigger(event);
-    };            
+    };
 
     //dzo utility
     //qeuryString to object
@@ -49,9 +49,9 @@ var dzo;
 
         if (!queryStr)
             return queryObj;
-            
+
         queryArr = queryStr.split('&');
-        queryLen = queryArr.length;       
+        queryLen = queryArr.length;
 
         for (var i=0; i<queryLen; i++) {
 
@@ -68,7 +68,7 @@ var dzo;
 
             var key, cookieStr = '';
 
-            for (key in param)         
+            for (key in param)
                 cookieStr += key + '=' + param[key] + '; ';
 
             document.cookie = cookieStr;
@@ -83,7 +83,7 @@ var dzo;
             if (startIdx < 0)
                 return;
 
-            startIdx++; 
+            startIdx++;
             endIdx = cookie.indexOf('; ', startIdx);
             startIdx += name.length;
 
@@ -107,16 +107,16 @@ var dzo;
         fontIndex: function() {
 
             return dzo.cookie.getCookie('fontIdx') || 3;
-        }(),       
+        }(),
 
         sizeChange: function(sign) {
 
             var cookieDate = new Date(),
                 fontArrLen = this.fontArr.length,
-                font, lineHeight;              
+                font, lineHeight;
 
-            if (sign === '+' && this.fontIndex < fontArrLen - 1) 
-                this.fontIndex++;        
+            if (sign === '+' && this.fontIndex < fontArrLen - 1)
+                this.fontIndex++;
 
             else if (sign === '-' && this.fontIndex > 0)
                 this.fontIndex--;
@@ -150,9 +150,9 @@ var dzo;
             var dispElem = $('[data-route-disp=' + inflow + ']'),
                 noDispElem = $('[data-route-disp]').not(dispElem),
                 routeElem = $('[data-route-disp]'),
-                routeLen = routeElem.length, 
-                elem; 
-            
+                routeLen = routeElem.length,
+                elem;
+
             for (var i=0; i<routeLen; i++) {
 
                 elem = $(routeElem[i]);

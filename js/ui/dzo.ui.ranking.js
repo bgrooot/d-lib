@@ -1,10 +1,10 @@
 //dzo.ranking
-dzo.ui('listtype', {   
+dzo.ui('listtype', {
 
     comp: 'ranking',
-    
-    options: {       
-       
+
+    options: {
+
         listType: 'number',
         from: 1,
         count: 5,
