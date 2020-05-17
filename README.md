@@ -129,3 +129,11 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |data-nav-position|top, bottom|
 |data-full-width|true, false|
 |data-nav-text|탭 텍스트|
+
+##### 어코디언
+**[DEMO PAGE](http://jsfiddle.net/cws80yz6)**
+
+|어트리뷰트|설명|
+|-|-|
+|data-event|mouseover, click|
+|data-nav-text|탭 텍스트|
