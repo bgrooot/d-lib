@@ -93,19 +93,18 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 ```
 
 ##### 랭킹
-**[DEMO PAGE](http://jsfiddle.net/67erst4d/3)**
+**[DEMO PAGE](http://jsfiddle.net/60pe7hg8/)**
 
 |어트리뷰트|설명|
 |-|-|
 |data-list-type|number, dot, text|
 |data-count|아이템 개수|
 |data-mark-count|강조 표시할 아이템 개수|
-|data-to|아이템 시작 인덱스|
-|data-from|아이템 종료 인덱스|
+|data-from|아이템 시작 인덱스|
   
   
 ##### 이벤트 배너
-**[DEMO PAGE](http://jsfiddle.net/z4zbqwkp/3)**
+**[DEMO PAGE](http://jsfiddle.net/ob4wxp3j/1)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -114,7 +113,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |data-duration|아이템 전환 시간 *(animation 타입에서만 적용)*|
 
 ##### 갤러리
-**[DEMO PAGE](http://jsfiddle.net/L7nrnhwm/2)**
+**[DEMO PAGE](http://jsfiddle.net/by6ngpqa/)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -122,7 +121,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |data-random|true, false|
 
 ##### 탭
-**[DEMO PAGE](http://jsfiddle.net/7qusgzqb/3)**
+**[DEMO PAGE](http://jsfiddle.net/vb3t27f6)**
 
 |어트리뷰트|설명|
 |-|-|
