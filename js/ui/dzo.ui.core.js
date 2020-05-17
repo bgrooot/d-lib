@@ -38,7 +38,7 @@
 
             default:
                 //return 'http://' + domainMapper(bind) + '.chosun.com/site/data/json/' + bind + '.json';
-                return 'https://cdn.jsdelivr.net/gh/bgrooot/dzo-lib/json/' + bind + '.json';
+                return 'https://cdn.jsdelivr.net/gh/bgrooot/dzo-lib/data/' + bind + '.js';
         }
     },
 
