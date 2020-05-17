@@ -93,7 +93,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 ```
 
 ##### 랭킹
-**[DEMO PAGE](http://jsfiddle.net/60pe7hg8/)**
+**[DEMO PAGE](http://jsfiddle.net/60pe7hg8)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -104,7 +104,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
   
   
 ##### 이벤트 배너
-**[DEMO PAGE](http://jsfiddle.net/ob4wxp3j/1)**
+**[DEMO PAGE](http://jsfiddle.net/utzerv3d)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -113,7 +113,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |data-duration|아이템 전환 시간 *(animation 타입에서만 적용)*|
 
 ##### 갤러리
-**[DEMO PAGE](http://jsfiddle.net/by6ngpqa/)**
+**[DEMO PAGE](http://jsfiddle.net/9funkq0j)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -121,11 +121,19 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |data-random|true, false|
 
 ##### 탭
-**[DEMO PAGE](http://jsfiddle.net/vb3t27f6)**
+**[DEMO PAGE](http://jsfiddle.net/hvb5yanz)**
 
 |어트리뷰트|설명|
 |-|-|
 |data-event|mouseover, click|
 |data-nav-position|top, bottom|
 |data-full-width|true, false|
+|data-nav-text|탭 텍스트|
+
+##### 어코디언
+**[DEMO PAGE](http://jsfiddle.net/qxz3dunr)**
+
+|어트리뷰트|설명|
+|-|-|
+|data-event|mouseover, click|
 |data-nav-text|탭 텍스트|
