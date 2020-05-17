@@ -234,7 +234,7 @@ h1 { font-weight:bold; font-size:16px; font-family: "굴림",Gulim; }
 .banner ul {height:auto;}
 .banner li { display:none; border:1px solid #dbdbdb;font-size:0;vertical-align:top;}
 .banner .on { display:block;}
-.banner p { margin: 0 0 .3em .5em;}
+.banner p { margin: .3em .5em; font-size:.7rem;}
 
 /*dzo-스크롤 뉴스*/
 .scrollnews { clear:both; width:100%; overflow: hidden;}
