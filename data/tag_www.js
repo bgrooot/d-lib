@@ -64,29 +64,32 @@ dzo_json("tag_www",{
     "article1": {
         "title": "[단독] 10억 기부받아 산 '위안부 쉼터' 펜션처럼 사용하다 돌연 반값 매각",
         "link": "https://news.chosun.com/site/data/html_dir/2020/05/16/2020051600091.html",
-        "alter": "박상현 기자 이해인 기자",
+        "alter": "박상현 기자, 이해인 기자",
         "image": "https://image.chosun.com/sitedata/image/202005/16/2020051600091_0.jpg"
     },
     "article2": {
         "title": "빚 135억·집 팔고 '두리랜드' 숙식 \"세상에 지기 싫습니다\"",
         "link": "https://news.chosun.com/site/data/html_dir/2020/05/15/2020051503323.html",
-        "alter": "",
+        "alter": "변희원 기자",
         "image": "https://image.chosun.com/sitedata/image/202005/15/2020051503315_0.jpg"
     },
     "article3": {
         "title": "故김복동 할머니 조의금으로 사드반대 단체 지원",
         "link": "https://news.chosun.com/site/data/html_dir/2020/05/16/2020051600070.html",
-        "alter": ""
+        "alter": "이해인 기자",
+        "image": "https://image.chosun.com/sitedata/image/202005/16/2020051600070_0.jpg"
     },
     "article4": {
         "title": "[단독] 연세대 교수 300명, 교육부 감사받고 무더기 징계",
         "link": "http://news.chosun.com/site/data/html_dir/2020/05/16/2020051600072.html",
-        "alter": ""
+        "alter": "황지윤 기자",
+        "image": "https://image.chosun.com/sitedata/image/202005/16/2020051600072_0.jpg"
 
     },
     "article5": {
         "title": "은퇴·고령자 돈 턴다… '해적뱅킹'하는 은행들",
         "link": "https://news.chosun.com/site/data/html_dir/2020/05/16/2020051600093.html",
-        "alter": ""
+        "alter": "최형석 기자",
+        "image": "https://image.chosun.com/sitedata/image/202005/16/2020051600093_0.jpg"
     }
 });
