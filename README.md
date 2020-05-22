@@ -137,3 +137,23 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |-|-|
 |data-event|mouseover, click|
 |data-nav-text|탭 텍스트|
+
+
+##### 기본형 썸네일
+**[DEMO PAGE](http://jsfiddle.net/2vsayzwt/3)**
+
+|어트리뷰트|설명|
+|-|-|
+|data-count|아이템 개수|
+|data-from|아이템 시작 인덱스|
+|data-show-thumb|true, false|
+
+##### 리스트 썸네일
+**[DEMO PAGE](http://jsfiddle.net/Lpkregan)**
+
+|어트리뷰트|설명|
+|-|-|
+|data-count|아이템 개수|
+|data-from|아이템 시작 인덱스|
+|data-list-type|number, dot, text|
+|data-show-author|true, false|
