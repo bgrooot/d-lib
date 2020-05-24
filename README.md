@@ -110,7 +110,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |data-duration|아이템 전환 시간 *(animation 타입에서만 적용)*|
 
 ##### 갤러리
-**[DEMO PAGE](http://jsfiddle.net/9funkq0j)**
+**[DEMO PAGE](http://jsfiddle.net/afbchvm5)**
 
 |어트리뷰트|설명|
 |-|-|
