@@ -24,7 +24,7 @@ dzo_json("tag_www",{
         {
             "title": "[단독] 연세대 교수 300명, 교육부 감사받고 무더기 징계",
             "desc": "학과장 69명은 입시 관리 소홀",
-            "alter": '황지윤 기자'
+            "alter": '황지윤 기자',
             "link": "http://news.chosun.com/site/data/html_dir/2020/05/16/2020051600072.html",
             "image": "https://image.chosun.com/sitedata/image/202005/16/2020051600072_0.jpg"
         },
