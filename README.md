@@ -1,7 +1,4 @@
 # dzo-lib
-***이 프로젝트는 예전에 작업했던 사내 자바스크립트 라이브러리입니다.  
-시연을 위한 최소한의 코드를 포함하고 있으며, 라이브러리리 소개와 작업한 내용을 설명하기 위한 페이지 입니다.***
-
 이 라이브러리의 구조는 [jQuery](http://jquery.com)를 많이 참고하였으며, 문법도 동일하게 엘리먼트를 선택하고 함수를 호출하는 방식으로 동작한다.
 
 jQuery에서는 엘리먼트 선택자로 [Sizzle](https://sizzlejs.com/)을 사용하는데 이 라이브러리에서는 ID와 엘리먼트 2가지로만 선택할 수 있다. dzo함수에 선택자를 넘겨주면 dzo객체의 기능을 사용할 수 있는 인스턴스가 생성된다.
@@ -137,3 +134,23 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |-|-|
 |data-event|mouseover, click|
 |data-nav-text|탭 텍스트|
+
+
+##### 기본형 썸네일
+**[DEMO PAGE](http://jsfiddle.net/nq8m4u1v)**
+
+|어트리뷰트|설명|
+|-|-|
+|data-count|아이템 개수|
+|data-from|아이템 시작 인덱스|
+|data-show-thumb|true, false|
+
+##### 리스트 썸네일
+**[DEMO PAGE](http://jsfiddle.net/Lc274jr0)**
+
+|어트리뷰트|설명|
+|-|-|
+|data-count|아이템 개수|
+|data-from|아이템 시작 인덱스|
+|data-list-type|number, dot, text|
+|data-show-author|true, false|
