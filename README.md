@@ -90,7 +90,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 ```
 
 ##### 랭킹
-**[DEMO PAGE](http://jsfiddle.net/60pe7hg8)**
+**[DEMO PAGE](http://jsfiddle.net/7Lmgta5z)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -101,7 +101,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
   
   
 ##### 이벤트 배너
-**[DEMO PAGE](http://jsfiddle.net/utzerv3d)**
+**[DEMO PAGE](http://jsfiddle.net/vjcdq9w4)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -118,7 +118,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |data-random|true, false|
 
 ##### 탭
-**[DEMO PAGE](http://jsfiddle.net/hvb5yanz)**
+**[DEMO PAGE](http://jsfiddle.net/bnqpa5mz)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -128,7 +128,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |data-nav-text|탭 텍스트|
 
 ##### 어코디언
-**[DEMO PAGE](http://jsfiddle.net/qxz3dunr)**
+**[DEMO PAGE](http://jsfiddle.net/7Lcpm45r)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -137,7 +137,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 
 
 ##### 기본형 썸네일
-**[DEMO PAGE](http://jsfiddle.net/nq8m4u1v)**
+**[DEMO PAGE](http://jsfiddle.net/g8ywm9xo)**
 
 |어트리뷰트|설명|
 |-|-|
@@ -146,7 +146,7 @@ $(document).trigger({type: 'uiLoadComplete', elem: $('body')});
 |data-show-thumb|true, false|
 
 ##### 리스트 썸네일
-**[DEMO PAGE](http://jsfiddle.net/Lc274jr0)**
+**[DEMO PAGE](http://jsfiddle.net/n7bygk2z)**
 
 |어트리뷰트|설명|
 |-|-|
